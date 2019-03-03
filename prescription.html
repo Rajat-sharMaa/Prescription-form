@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prescription</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <style>
+        form_main {
+            width: 100%;
+        }
+        .form_main h4 {
+            font-family: roboto;
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 15px;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+        .heading {
+            border-bottom: 1px solid #fcab0e;
+            padding-bottom: 9px;
+            position: relative;
+        }
+        .heading span {
+            background: #9e6600 none repeat scroll 0 0;
+            bottom: -2px;
+            height: 3px;
+            left: 0;
+            position: absolute;
+            width: 75px;
+        }
+        .form {
+            border-radius: 7px;
+            padding: 6px;
+        }
+        .txt[type="text"] {
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            padding: 10px 0 10px 5px;
+            width: 100%;
+        }
+        .txt_3[type="text"] {
+            margin: 10px 0 0;
+            padding: 10px 0 10px 5px;
+            width: 100%;
+        }
+        .txt2[type="submit"] {
+            background: #242424 none repeat scroll 0 0;
+            border: 1px solid #4f5c04;
+            border-radius: 25px;
+            color: #fff;
+            font-size: 16px;
+            font-style: normal;
+            line-height: 35px;
+            margin: 10px 0;
+            padding: 0;
+            text-transform: uppercase;
+            width: 30%;
+        }
+        .txt2:hover {
+            background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+            color: #5793ef;
+            transition: all 0.5s ease 0s;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form_main">
+                <h4 class="heading"><strong>Max</strong> Health Care <span></span></h4>
+                Patient name : <input type="text" name="name"> &nbsp;&nbsp; Age : <input type="number" name="age">
+                &nbsp;&nbsp; Gender : <input type="radio" name="gender" > M&nbsp; &nbsp; <input type="radio" name="gender" >&nbsp;F <br> <br>
+                MaxID: <input type="number"> &nbsp;&nbsp; Doctor Name : <input type="text" name="doc_name"> &nbsp; &nbsp;
+                Date: <input type="date" name="date"> &nbsp;&nbsp; Invoice Number : <input type="number" name="invoice">
+
+                <hr style="color: orangered" size="300">
+
+                <div class="form-group">
+                <label for="allergy">Allergy:</label>
+                <input type="text" class="form-control" id="allergy">
+                </div>
+                <div class="form-group">
+                 <label for="illness"> Chief complaints and history of present illness: </label>
+                        <textarea id="illness" class="form-control" rows="5"  ></textarea>
+
+                </div>
+                <div class="form-group">
+                    <label for="physical">Physical Examination:</label>
+                    <input type="text" class="form-control" id="physical">
+                </div>
+                <div class="form-group" >
+                    <label for="provi">Provisional Diagnosis:</label>
+                    <input type="text" class="form-control" id="provi">
+                </div>
+                <div class="form-group">
+                    <label for="investigation"> Investigation advised: </label>
+                    <textarea id="investigation" class="form-control" rows="5"  ></textarea>
+                </div>
+                <b>Medicines Advised:</b>
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Medicine</th>
+                        <th>Schedule</th>
+                        <th>Instruction</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td></td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div class="form-group">
+                    <label for="physical">Advice:</label>
+                    <input type="text" class="form-control" id="advice">
+                </div>
+
+                <div>
+                    <label for="follow">Next follow up:</label>
+                    <input type="date" id="follow" name="trip-start"
+                </div>
+
+
+            </div>
+        </div
+    </div>
+</div>
+
+
+</body>
+</html>
