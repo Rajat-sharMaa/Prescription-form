@@ -64,43 +64,44 @@
             color: #5793ef;
             transition: all 0.5s ease 0s;
         }
+        #outer{
+            align-items: center;
+
+        }
 
     </style>
 </head>
 <body>
 
-<div class="container">
+<div class="container" id="outer" >
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
             <div class="form_main">
                 <h4 class="heading"><strong>Max</strong> Health Care <span></span></h4>
-                Patient name : <input type="text" name="name"> &nbsp;&nbsp; Age : <input type="number" name="age">
-                &nbsp;&nbsp; Gender : <input type="radio" name="gender" > M&nbsp; &nbsp; <input type="radio" name="gender" >&nbsp;F <br> <br>
-                MaxID: <input type="number"> &nbsp;&nbsp; Doctor Name : <input type="text" name="doc_name"> &nbsp; &nbsp;
-                Date: <input type="date" name="date"> &nbsp;&nbsp; Invoice Number : <input type="number" name="invoice">
+                Patient name : <p id="name""> </p> Age : <p  id="age" ></p>
+                Gender : <p  id="gender" > </p><br> <br>
+                MaxID: <p id=" maxid"> </p> Doctor Name : <p id="doc_name"> </p>
+                Date: <p id="date"> </p>&nbspInvoice Number : <p id="invoice"> </p>
 
                 <hr style="color: orangered" size="300">
 
-                <div class="form-group">
-                <label for="allergy">Allergy:</label>
-                <input type="text" class="form-control" id="allergy">
-                </div>
+
                 <div class="form-group">
                  <label for="illness"> Chief complaints and history of present illness: </label>
-                        <textarea id="illness" class="form-control" rows="5"  ></textarea>
+                        <p id="illness" class="form-control"  ></p>
 
                 </div>
                 <div class="form-group">
                     <label for="physical">Physical Examination:</label>
-                    <input type="text" class="form-control" id="physical">
+                    <p class="form-control" id="physical"></p>
                 </div>
                 <div class="form-group" >
                     <label for="provi">Provisional Diagnosis:</label>
-                    <input type="text" class="form-control" id="provi">
+                    <p class="form-control" id="provi"> </p>
                 </div>
                 <div class="form-group">
                     <label for="investigation"> Investigation advised: </label>
-                    <textarea id="investigation" class="form-control" rows="5"  ></textarea>
+                    <p class="form-control" id="investigation"></p>
                 </div>
                 <b>Medicines Advised:</b>
                 <table class="table table-bordered">
@@ -132,12 +133,12 @@
 
                 <div class="form-group">
                     <label for="physical">Advice:</label>
-                    <input type="text" class="form-control" id="advice">
+                    <p id="advice"></p>
                 </div>
 
                 <div>
                     <label for="follow">Next follow up:</label>
-                    <input type="date" id="follow" name="trip-start"
+                    <p id="follow"></p>
                 </div>
 
 
